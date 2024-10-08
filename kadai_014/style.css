@@ -1,4 +1,3 @@
-/* ルート要素のフォントサイズ */
 html {
     font-size: 20px;
 }
@@ -6,58 +5,24 @@ html {
 body {
     font-family: "Arial", "Meiryo", sans-serif;
     text-align: center;
-    background-color: #fff;
-    color: #333;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
+h1  {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2rem;
+    letter-spacing: 1.2em;
+    text-shadow: 1px 1px 2px gray;
+    border-bottom: solid 3px rgb(115, 115, 114);
 }
 
-/* h1 のスタイル */
-h1 {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 2em; /* ルートの2倍 */
-    letter-spacing: 1.2em; /* 文字の大きさの1.2倍 */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 影 */
-    color: black;
-}
-
-/* スカイブルーの文字 */
 .skyblue {
     color: skyblue;
 }
 
-/* ピンクの文字 */
 .pink {
     color: rgb(255, 192, 203);
 }
 
-/* 実線 */
-hr {
-    margin: 20px 0;
-    border: 0;
-    height: 3px;
-    background-color: rgb(115, 115, 114);
-}
-
-/* 見出しのスタイル */
-h2.title {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.profile-item {
-    margin: 20px 0;
-}
-
-/* 子孫セレクタを使用して特定の p 要素を太字に */
-#basic p strong {
+#child p {
     font-weight: bold;
-}
-
-/* 残りのpは太字にならない */
-p {
-    font-weight: normal;
 }
