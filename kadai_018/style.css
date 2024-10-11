@@ -3,7 +3,7 @@
     background-color: #dcc9f4;
     padding-top:20px;
     padding-bottom: 20px;
-    margin: 0 auto;
+    margin: 20px auto;
     text-align: center;
     position: relative;
 }
@@ -12,6 +12,7 @@
     width: 20%;
     background-color: #ffd9df;
     display: inline-block;
+    margin-right: 5px;
 }
 
 #middle {
@@ -19,7 +20,7 @@
     height: 800px;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin:0 auto;
+    margin: 20px auto;
     background-color: #ffd9df;
     position: relative;
 }
@@ -56,7 +57,7 @@
     height: 300px;
     text-align: center;
     background-color: #87ceeb;
-    margin: 0 auto;
+    margin: 20px auto;
     position: relative;
 }
 
