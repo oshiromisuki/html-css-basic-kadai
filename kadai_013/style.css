@@ -1,8 +1,9 @@
-/* PC、スマホ共通スタイル */
+
+
+/* PC, スマホ共通スタイル */
 body {
-  font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
-  min-width: 375px;
-  margin: 0;
+  color: black;
+  font-family: "Source Sans Pro", "Hiragino kaku Gothic ProN", Meiryo, Arial, sans-serif;
 }
 
 p {
@@ -13,127 +14,140 @@ p {
   width: 100%;
 }
 
-/*================
-PC用のスタイル 
-=================*/
+/* PC用スタイル */
 @media screen and (min-width: 768px) {
+     /* AI先生のもと下記記入 */
+     #menu-sp, #nav-sp {
+        display: none;
+  }
   /* 横幅設定 */
   body {
-    max-width: 1080px;
-    min-width: 960px;
-    margin: 0 auto;
+      max-width: 1080px;
+      min-width: 960px;
+      margin: 0 auto;
   }
 
   /* ヘッダー */
   header {
-    display: flex;
-    justify-content: space-between;
+      display: flex;
+      justify-content: space-between;
   }
 
   /* ナビゲーションのレイアウト */
   #nav-pc {
-    text-align: right;
-    font-size: 14px;
-    padding-top: 15px;
-    display: block;
+      text-align: right;
+      font-size: 14px;
+      padding-top: 15px;
   }
 
   /* ナビゲーションのリンクの装飾設定 */
   #nav-pc > a {
-    text-decoration: none;
-    margin-left: 20px;
+      text-decoration: none;
+      margin-left: 20px;
   }
 
-  #nav-pc > a:link, #nav-pc > a:visited {
-    color: #0d0d0d;
+  #nav-pc > a:link {
+      color: black;
   }
 
   #nav-pc > a:hover {
-    color: #0d0d0d;
-    text-decoration: underline;
+      color: black;
+      text-decoration: underline;
   }
 
   #nav-pc > a:active {
-    color: #0d0d0d;
-  }
-
-  /* SP用ナビゲーション非表示 */
-  #menu-sp, #nav-sp {
-    display: none;
+      color: black;
   }
 }
 
-/*================
-SP用のスタイル 
-=================*/
+/* スマートフォン用スタイル */
 @media screen and (max-width: 767px) {
   body {
-    min-width: 375px;
-    margin: 0;
+      min-width: 375px;
+      margin: 0;
   }
 
-  /* PCナビゲーション非表示 */
   #nav-pc {
-    display: none;
+      display: none;
   }
 
   /* ハンバーガーメニュー */
   #menu-sp {
-    float: right;
-    padding: 0;
+      /* float: right;
+      padding: 0; */
+      /* AI先生のもと上記消去、下記記入 */
+      float: right;
+      padding: 0;
+      background: none;
+      border: none;
+      cursor: pointer;
   }
 
-  /* スマホ用ナビゲーション */
+  /* スマートフォン用ナビゲーション */
   #nav-sp {
-    background-color: #ce933e;
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    display: none;
-    z-index: 100;
+      background-color: #ce933e;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      display: none;
+      z-index: 100;
   }
-
-  #nav-sp ul {
-    padding-left: 0;
+  
+  #nav-sp ul{
+      padding-left: 0;
   }
+  
 
-  #nav-sp li {
-    list-style: none;
-  }
-
+  /* xボタン */
+  /* AI先生指導のもとコーディング */
   #close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #ffffff;
+  cursor: pointer;
   }
 
+  /* ナビゲーションロゴ */
   #logo-sp {
-    margin: 80px 0 30px 20px;
+        margin: 80px,0,30px,20px;
   }
 
-  #nav-sp a {
-    display: block;
+  #nav-sp > a {
+      display: block;
   }
 
-  #nav-sp a:link{ color: #ffffff;
-  } 
-  #nav-sp a:visited{ color: #ffffff;
-  } 
-  #nav-sp a:hover{ color: #ffffff;  text-decoration: underline;
-  } 
-  #nav-sp a:active { color: #ffffff;
-  } 
+  #nav-sp > a:link {
+      color: #ffffff;
+  }
 
-  #nav-sp.menu {
-    text-decoration: none;
-    display: block;
-    margin: 0 20px;
-    height: 44px;
-    font-size: 16px;
-    background-image: url("images/arrow.png");
-    background-repeat: no-repeat;
-    background-position: right top;
+  #nav-sp > a:visited {
+      color: #ffffff;
+  }
+
+  #nav-sp > a:hover {
+    color: #ffffff;
+      text-decoration: underline;
+  }
+
+  #nav-sp > a:active {
+      color: #ffffff;
+  }
+
+  #nav-sp .menu {
+      text-decoration: none;
+      display: block;
+      margin: 0 20px;
+      height: 44px;
+      font-size: 16px;
+      background-image: url("images/arrow.png");
+      background-repeat: no-repeat;
+      background-position: right top;
   }
 }
+
